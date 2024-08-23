@@ -1,0 +1,21 @@
+from replit import clear 
+user = "Diego"
+pasw = "1234"
+incorrect_user = 3
+print("     Welcome!!\n")
+while incorrect_user > 0:
+  user_input = input("What's your username: ")
+  user_pasw = input("What's your password: ")
+  
+  if user_input == user and user_pasw == pasw:
+    print("Loading...")
+    break
+      
+  else:
+    print("Incorrect username or password")
+    print("Try again")
+    incorrect_user -= 1
+
+  if incorrect_user == 0:
+    print("Try Again Later...")
+  break
